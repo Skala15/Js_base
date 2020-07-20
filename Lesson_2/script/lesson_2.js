@@ -1,6 +1,6 @@
 //Задание после второго урока
 //Задание #1
-/* var a = 1
+var a = 1
 var b = 1
 var c
 var d
@@ -18,19 +18,32 @@ d = (2 + b++)
 alert("Вывод d2: " + d) //4         d = 2 + b + 1 = 4,      b + 1 считет после 41 строки
 
 alert("Вывод a: " + a) //3          a - изначально 1, в 28 строке ++a, в 34 строке ++a.   Итого: a=3
-alert("Вывод b: " + b) //3          b - изначально 1, в 31 строке b++, в 37 строке b++.   Итого: b=3  */
+alert("Вывод b: " + b) //3          b - изначально 1, в 31 строке b++, в 37 строке b++.   Итого: b=3  
+
+
+
+
+
 
 
 
 //Задание #2
-/*var a = 2
-var x = 1 + (a *= 2)       // x = 1 + (a * 2) = 5          Ответ: 5 */
+/*
+var a = 2
+var x = 1 + (a *= 2)       // x = 1 + (a * 2) = 5          Ответ: 5
+*/
+
+
+
+
+
 
 
 
 
 //Задание #3
-/* let a = prompt("Введите a:")
+/* 
+let a = prompt("Введите a:")
 let b = prompt("Введите b:")
 if (a >= 0 && b >= 0) {
 	alert("Разность: " + (a - b))
@@ -40,31 +53,58 @@ if (a >= 0 && b >= 0) {
 	a = parseInt(a)
 	b = parseInt(b)
 	alert("Сумма: " + (a + b)) 
-} */
+} 
+*/
 
 
 
 
-//Задание #4 ДОДЕЛАТЬ
-/*let a = Math.round(Math.random() * 15)
+
+
+
+
+
+
+//Задание #4 
+/* 
+let a = Math.round(Math.random() * 15)
 alert(a)
 switch (a) {
-	case 0 <= a <= 5:
-	alert("Числа от 0 до 5: " + a);
-	break;
-	case 10 >= a > 5:
-	alert("Числа от 6 до 10: " + a);
-	break;
-	case 15 >= a > 11:
-	alert("Числа от 11 до 15: " + a);
-	break;
-} */
+	case 0:
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+	case 6:
+	case 7:
+	case 8:
+	case 9:
+	case 10:
+	case 11:
+	case 12:
+	case 13:
+	case 14:
+	case 15:
+		alert("Чисто в диапазоне " + a)
+		break
+	default:
+		alert("Другое число")
+		break
+} 
+*/
+
+
+
+
+
 
 
 
 
 //Задание #5
-/*let a
+/*
+let a
 let b
 function summa(a, b) {
 	return a + b
@@ -94,26 +134,40 @@ alert("Вычитание: " + subtraction(43, 20))
 
 
 
-//Задание #6 ДОДЕЛАТЬ
-/*function mathOperation() {
+
+
+
+
+
+
+//Задание #6
+/*
+function mathOperation() {
 	let arg1 = prompt("Введите arg1: ")
 	let arg2 = prompt("Введите arg2: ")
 	let operation = prompt("Введите Operation( + - * / ): ")
 
-	switch (operation)
-	case "+":
-	alert("Сумма: " + (arg1 + arg2));
-	break
-	case "-":
-	alert("Разность: " + (arg1 - arg2));
-	break
-	case "*":
-	alert("Умножение: " + (arg1 * arg2));
-	case "/":
-	alert("Деление: " + (arg1 / arg2));
-	default:
-	alert("Неправильно введена операция!!!")
-}*/
+	switch (operation) {
+		case "+":
+			alert("Сумма: " + (arg1 + arg2))
+			break
+		case "-":
+			alert("Разность: " + (arg1 - arg2))
+			break
+		case "*":
+			alert("Умножение: " + (arg1 * arg2))
+			break
+		case "/":
+			alert("Деление: " + (arg1 / arg2))
+			break
+		default:
+			alert("Неправильно введена операция!!!")
+	}
+}
+*/
+
+
+
 
 
 
@@ -122,7 +176,8 @@ alert("Вычитание: " + subtraction(43, 20))
 
 
 //Задание #7 
-/*let a = 0
+/*
+let a = 0
 let b = null
 
 alert(typeof(a))  //number
@@ -133,7 +188,15 @@ alert(a == b)      //false так как null - это объект, а 0 - эт
 
 
 
+
+
+
+
+
+
+
 //Задание #8
+/*
 let val = prompt("Введите число: ")
 let pow = prompt("Введите степень: ")
 function power(val, pow) {
@@ -141,3 +204,4 @@ function power(val, pow) {
 }
 
 alert(power(val, pow))
+*/
