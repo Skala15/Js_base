@@ -1,5 +1,6 @@
 //Задание после второго урока
 //Задание #1
+/*
 var a = 1
 var b = 1
 var c
@@ -19,7 +20,7 @@ alert("Вывод d2: " + d) //4         d = 2 + b + 1 = 4,      b + 1 счит�
 
 alert("Вывод a: " + a) //3          a - изначально 1, в 28 строке ++a, в 34 строке ++a.   Итого: a=3
 alert("Вывод b: " + b) //3          b - изначально 1, в 31 строке b++, в 37 строке b++.   Итого: b=3  
-
+*/
 
 
 
@@ -66,35 +67,45 @@ if (a >= 0 && b >= 0) {
 
 
 //Задание #4 
-/* 
+
 let a = Math.round(Math.random() * 15)
 alert(a)
 switch (a) {
-	case 0:
 	case 1:
+		console.log("1")
 	case 2:
+		console.log("2")
 	case 3:
+		console.log("3")
 	case 4:
+		console.log("4")
 	case 5:
+		console.log("5")
 	case 6:
+		console.log("6")
 	case 7:
+		console.log("7")
 	case 8:
+		console.log("8")
 	case 9:
+		console.log("9")
 	case 10:
+		console.log("10")
 	case 11:
+		console.log("11")
 	case 12:
+		console.log("12")
 	case 13:
+		console.log("13")
 	case 14:
+		console.log("14")
 	case 15:
-		alert("Чисто в диапазоне " + a)
+		console.log("15")
 		break
 	default:
 		alert("Другое число")
 		break
 } 
-*/
-
-
 
 
 
@@ -143,8 +154,8 @@ alert("Вычитание: " + subtraction(43, 20))
 //Задание #6
 /*
 function mathOperation() {
-	let arg1 = prompt("Введите arg1: ")
-	let arg2 = prompt("Введите arg2: ")
+	let arg1 = parseInt(prompt("Введите arg1: "))
+	let arg2 = parseInt(prompt("Введите arg2: "))
 	let operation = prompt("Введите Operation( + - * / ): ")
 
 	switch (operation) {
@@ -164,8 +175,9 @@ function mathOperation() {
 			alert("Неправильно введена операция!!!")
 	}
 }
-*/
 
+mathOperation()
+*/
 
 
 
