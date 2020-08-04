@@ -1,35 +1,47 @@
 //Задание №1
 
-let number = prompt("Введите число от 0 до 999: ")
+function counter(n) {
+	const obj = {}
 
-let object = {}
-object.unit = number % 10
-object.ten = Math.floor((number % 100) / 10)
-object.hundred = Math.floor((number % 1000) / 100)
+	if (n >= 0 && n <= 999) {
+		const number = []
 
-console.log(object)
+		for (let i = 1; i <= 3; i++) {
+			number.push(n % 10)
+			n = Math.trunc(n / 10)
+		}
+
+		[obj.unit, obj.ten, obj.hundred] = number
+	}
+
+	return obj
+}
+
+const result = counter(prompt("Введите число"))
+console.log(result)
 
 
 
 
 //Задание №2
 
-let arr = [3300, 1100, 2200, 2500]
 
-let obj = {}
-obj.shorts = arr[0]
-obj.cap = arr[1]
-obj.shoes = arr[2]
-obj.socks = arr[3]
+let basket_price = 0
 
-console.log(obj)
+const object = {
 
-function countBasketPrice(arr) {
-	let sum = 0
-	for (let i = 0; i < arr.length; i++) {
-		sum += arr[i]
+	arr: [{product: "shorts", price: 2200}, {product: "cap", price: 1100}, {product: "shoes", price: 3300}, {product: "socks", price: 220}],
+	
+	countBasketPrice: function () {
+		
+		for(i = 0; i < this.arr.length; i++) {
+			basket_price = parseInt(basket_price + this.arr[i].price)
+
+		}
+
+		console.log(basket_price)
+		return 
 	}
-	console.log("сумма: " + sum + " руб.")
 }
 
-countBasketPrice(arr)
+object.countBasketPrice()
