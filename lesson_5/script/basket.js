@@ -1,3 +1,5 @@
+// Задание 2
+
 let basket_price = 0
 
 const object = {
@@ -16,4 +18,12 @@ const object = {
 	}
 }
 
-object.countBasketPrice()
+
+document.write("<h2>В корзина:</h2>")
+
+for (i=0; i < object.arr.length; i++) {
+	document.write(object.arr[i].product + ' — ' + object.arr[i].price + " руб</br>")
+}
+
+document.write("</br><b>В корзине: " + "</b>" + object.arr.length + " товара")
+document.write("</br><b>Стоимость заказа: "  + "</b>" + object.countBasketPrice())
