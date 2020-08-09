@@ -19,11 +19,26 @@ const object = {
 }
 
 
-document.write("<h2>В корзина:</h2>")
 
-for (i=0; i < object.arr.length; i++) {
-	document.write(object.arr[i].product + ' — ' + object.arr[i].price + " руб</br>")
+
+let a = document.createElement("div")
+a.className = "my_div"
+a.innerHTML = "<h1>Kорзина: </h1>"
+basket.appendChild(a)
+
+for (i = 0; i < object.arr.length; i++) {
+	let b = document.createElement("span")
+	b.innerHTML = object.arr[i].product + ' — ' + object.arr[i].price + " руб</br>"
+	basket.appendChild(b)
 }
 
-document.write("</br><b>В корзине: " + "</b>" + object.arr.length + " товара")
-document.write("</br><b>Стоимость заказа: "  + "</b>" + object.countBasketPrice())
+let c = document.createElement("span")
+c.innerHTML = ("</br><b>В корзине: " + "</b>" + object.arr.length + " товара")
+basket.appendChild(c)
+
+let d = document.createElement("span")
+d.innerHTML = "</br><b>Стоимость заказа: "  + "</b>" + object.countBasketPrice()
+basket.appendChild(d)
+
+
+

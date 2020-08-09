@@ -9,7 +9,7 @@ function myBoard(){
         
         for (let j = 0; j < 8; j++) {
             
-            if (j == 0) {
+            if (j === 0) {
                 cell =! cell  
             }
             
